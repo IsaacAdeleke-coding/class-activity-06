@@ -6,9 +6,31 @@
 //
 
 #include <iostream>
+#include <string>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main() {
+    // Variables to store user input
+    string street, city, state, zipCode;
+
+    // Asking the user for inputs
+    cout << "Enter your street: ";
+    getline(cin, street);
+
+    cout << "Enter your city: ";
+    getline(cin, city);
+
+    cout << "Enter your state: ";
+    getline(cin, state);
+
+    cout << "Enter your ZIP code: ";
+    getline(cin, zipCode);
+
+    // Printing the address in the specified format
+    cout << "\nYour address is:\n";
+    cout << street << endl;
+    cout << city << ", " << state << ", " << zipCode << "." << endl;
+
     return 0;
 }
+
